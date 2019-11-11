@@ -1,0 +1,14 @@
+map ctrl+page_down  kitten smart_tab.py  next_tab      ctrl+page_down
+map ctrl+page_up    kitten smart_tab.py  previous_tab  ctrl+page_up
+map ctrl+shift+page_down  kitten smart_tab.py  move_tab_forward   ctrl+shift+page_down
+map ctrl+shift+page_up    kitten smart_tab.py  move_tab_backward  ctrl+shift+page_up
+map alt+1  kitten smart_tab.py  goto_tab 1  alt+1
+map alt+2  kitten smart_tab.py  goto_tab 2  alt+2
+map alt+3  kitten smart_tab.py  goto_tab 3  alt+3
+map alt+4  kitten smart_tab.py  goto_tab 4  alt+4
+map alt+5  kitten smart_tab.py  goto_tab 5  alt+5
+map alt+6  kitten smart_tab.py  goto_tab 6  alt+6
+map alt+7  kitten smart_tab.py  goto_tab 7  alt+7
+map alt+8  kitten smart_tab.py  goto_tab 8  alt+8
+map alt+9  kitten smart_tab.py  goto_tab 9  alt+9
+map alt+0  kitten smart_tab.py  goto_tab 10  alt+0
