@@ -1,6 +1,8 @@
 from kitty.conf.utils import parse_kittens_shortcut
 from kitty.config import parse_key_action
+import kitty.fast_data_types as fdt
 from kitty import keys
+
 
 def main(args):
     pass
@@ -10,6 +12,15 @@ def _actions(extended):
     yield keys.defines.GLFW_PRESS
     if extended:
         yield keys.defines.GLFW_RELEASE
+
+
+def _mods_to_glfw(mods):
+    return sum(glfw
+               for mod, glfw in {ke.SHIFT: fdt.GLFW_MOD_SHIFT,
+                                 ke.CTRL:  fdt.GLFW_MOD_CONTROL,
+                                 ke.ALT:   fdt.GLFW_MOD_ALT,
+                                 ke.SUPER: fdt.GLFW_MOD_SUPER}.items()
+               if mods & mod)
 
 
 def handle_result(args, answer, target_window_id, boss):
@@ -38,7 +49,8 @@ def handle_result(args, answer, target_window_id, boss):
             .format(
                 keys.key_to_bytes(
                     getattr(keys.defines, 'GLFW_KEY_{}'.format(key)),
-                    w.screen.cursor_key_mode, extended, mods, action)
+                    w.screen.cursor_key_mode, extended,
+                    _mods_to_glfw(mods), action)
                 .decode('ascii')))
         w.write_to_child(sequence)
 
