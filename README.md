@@ -24,7 +24,7 @@ In this case, you want those same keys to switch `tmux` windows.
 
 # Minimum requirements
 
-Kitty 0.13.0 or higher.
+Kitty 0.24.0 or higher.
 
 
 # Installation
