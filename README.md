@@ -56,19 +56,19 @@ will depend on whether you have tabs in the current OS window.
 ## Next tab
 
 ```
-map ctrl+page_down  kitty smart_tab.py  next_tab  ctrl+page_down
+map ctrl+page_down  kitten smart_tab.py  next_tab  ctrl+page_down
 ```
 
 ## Previous tab
 
 ```
-map ctrl+page_up  kitty smart_tab.py  previous_tab  ctrl+page_up
+map ctrl+page_up  kitten smart_tab.py  previous_tab  ctrl+page_up
 ```
 
 ## New tab
 
 ```
-map ctrl+shift+t  kitty smart_tab.py  new_tab  alt+shift+t
+map ctrl+shift+t  kitten smart_tab.py  new_tab  alt+shift+t
 ```
 
 Note that in this example the key sent to the application is different.
@@ -78,33 +78,33 @@ a <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>letter</kbd> combination.
 ## Close tab
 
 ```
-map ctrl+shift+w  kitty smart_tab.py  close_tab  alt+shift+w
+map ctrl+shift+w  kitten smart_tab.py  close_tab  alt+shift+w
 ```
 
 ## Move tab forward
 
 ```
-map ctrl+shift+page_down  kitty smart_tab.py  move_tab_forward  ctrl+shift+page_down
+map ctrl+shift+page_down  kitten smart_tab.py  move_tab_forward  ctrl+shift+page_down
 ```
 
 ## Move tab backward
 
 ```
-map ctrl+shift+page_up  kitty smart_tab.py  move_tab_backward  ctrl+shift+page_up
+map ctrl+shift+page_up  kitten smart_tab.py  move_tab_backward  ctrl+shift+page_up
 ```
 
 ## Set tab title
 
 ```
-map ctrl+shift+f2  kitty smart_tab.py  set_tab_title  ctrl+shift+f2
+map ctrl+shift+f2  kitten smart_tab.py  set_tab_title  ctrl+shift+f2
 ```
 
 ## Go to tab
 
 ```
-map alt+1  kitty smart_tab.py  goto_tab 1  alt+1
-map alt+2  kitty smart_tab.py  goto_tab 2  alt+2
+map alt+1  kitten smart_tab.py  goto_tab 1  alt+1
+map alt+2  kitten smart_tab.py  goto_tab 2  alt+2
 …
-map alt+9  kitty smart_tab.py  goto_tab 9  alt+9
-map alt+0  kitty smart_tab.py  goto_tab 10  alt+0
+map alt+9  kitten smart_tab.py  goto_tab 9  alt+9
+map alt+0  kitten smart_tab.py  goto_tab 10  alt+0
 ```
